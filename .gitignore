@@ -1,0 +1,4 @@
+# .gitignore for C# projects
+bin/
+obj/
+
