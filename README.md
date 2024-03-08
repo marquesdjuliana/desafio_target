@@ -23,7 +23,7 @@ cd desafio_target
 3. Executando o console:
 
 ```sh
-cd DesafiosTarget && dotnet run
+cd ChallengeTarget && dotnet run
 ```
 
 
