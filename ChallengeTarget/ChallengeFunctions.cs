@@ -2,7 +2,7 @@ using System;
 
 public class ChallengeFunctions
 {
-    public static int SumUntilIndex()
+    public static int CalculateSumUntilIndex()
     {
         int index = 13;
         int sum = 0;
@@ -17,35 +17,41 @@ public class ChallengeFunctions
         return sum;
     }
 
-    public static bool IsInFibonacciSequence(int number)
-    {
-        int a = 0, b = 1;
-
-        while (b <= number)
+        public static bool IsInFibonacciSequence(int number)
         {
-            if (b == number)
+          
+            int a = 0, b = 1;
+
+            if (number == 0)
             {
                 return true;
             }
 
-            int temp = a;
-            a = b;
-            b = temp + b;
-        }
+            while (b <= number)
+            {
+                if (b == number)
+                {
+                    return true;
+                }
 
-        return false;
-    }
+                int temp = a;
+                a = b;
+                b = temp + b;
+            }
+
+            return false;
+        }
 
     public static string ReverseString(string input)
     {
         char[] charArray = input.ToCharArray();
         int length = charArray.Length;
 
-        for (int i = 0; i < length / 2; i++)
+        for (int index = 0; index < length / 2; index++)
         {
-            char temp = charArray[i];
-            charArray[i] = charArray[length - 1 - i];
-            charArray[length - 1 - i] = temp;
+            char temp = charArray[index];
+            charArray[index] = charArray[length - 1 - index];
+            charArray[length - 1 - index] = temp;
         }
 
         return new string(charArray);

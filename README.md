@@ -3,7 +3,7 @@ Este é um projeto de aplicação console C# que implementa as lógicas das fun�
 
 ## Requisitos 
 
-- Requisito 01: Responde qual o valor da variável SOMA através da função 'SumUntilIndex'.
+- Requisito 01: Responde qual o valor da variável SOMA através da função 'CalculeteSumUntilIndex'.
 
 - Requisito 02: Responde se o número informado pertence ou não à sequência de Fibonacci através da função 'IsInFibonacciSequence'.
 
