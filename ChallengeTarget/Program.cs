@@ -9,7 +9,7 @@ class Program
             Console.WriteLine("Escolha uma opção:");
             Console.WriteLine("1. Calcular a soma até o índice");
             Console.WriteLine("2. Verificar se um número pertence à sequência de Fibonacci");
-            Console.WriteLine("3. Inverta");
+            Console.WriteLine("3. Inverter uma string");
             Console.WriteLine("0. Sair");
 
             if (int.TryParse(Console.ReadLine(), out int choice))
@@ -84,9 +84,11 @@ class Program
         }
     }
 
-    static bool IsValidString(string input)
+    static bool IsValidString(string? input)
     {
         return !string.IsNullOrEmpty(input) && input.All(char.IsLetter);
     }
+
+
 
 }
